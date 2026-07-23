@@ -19,14 +19,14 @@
         <td class="profile-copy">
           <p class="name">Jiaxiao Shi | &#21490;&#23478;&#31659;</p>
           <p>
-            I am currently a Ph.D. student at <a href="https://marslab.tech/">MarsLab</a>, Nanyang Technological University, 
-            advised by <a href="https://marsyang.site/">Prof. Jianfei Yang</a>.
+            I am currently a Ph.D. student at <a class="marslab-link" href="https://marslab.tech/">MarsLab</a>, Nanyang Technological University, 
+            advised by <a class="advisor-link" href="https://marsyang.site/">Prof. Jianfei Yang</a>.
             Previously, I received my B.Eng. from Harbin Institute of Technology, 
-            where I worked at the <a href="https://robot.hit.edu.cn/">State Key Laboratory of Robotics and System</a> under the supervision of <a href="https://homepage.hit.edu.cn/liuhong">Prof. Hong Liu</a>. 
-            I was also interned at <a href="https://fast-fire.github.io/">Fast-Fire</a>, Zhejiang University, 
-            advised by <a href="https://fast-fire.github.io/author/yanjun-cao/">Dr. Yanjun Cao</a>, 
-            and at <a href="https://eng.bigai.ai/">Beijing Institute for General Artificial Intelligence (BIGAI)</a>, 
-            advised by <a href="https://tengyu.ai/">Dr. Tengyu Liu</a> and <a href="https://siyuanhuang.com/">Dr. Siyuan Huang</a>.
+            where I worked at the State Key Laboratory of Robotics and System under the supervision of <a class="advisor-link" href="https://homepage.hit.edu.cn/liuhong">Prof. Hong Liu</a>. 
+            I was also interned at Fast-Fire, Zhejiang University, 
+            advised by <a class="advisor-link" href="https://fast-fire.github.io/author/yanjun-cao/">Dr. Yanjun Cao</a>, 
+            and at Beijing Institute for General Artificial Intelligence (BIGAI), 
+            advised by <a class="advisor-link" href="https://tengyu.ai/">Dr. Tengyu Liu</a> and <a class="advisor-link" href="https://siyuanhuang.com/">Dr. Siyuan Huang</a>.
           </p>
           <p>
             My previous research interests included robotic planning and optimization, autonomous vehicles and aerial robotics. I now focus on <strong>dexterous hands</strong> and <strong>robotic manipulation</strong>.
@@ -72,7 +72,7 @@
         <h2>News</h2>
         <ul class="news-list">
           <li><strong>[2026/08]</strong> &#127881; The official website of ECO and the v2 version of arXiv are now online!</li>
-          <li><strong>[2026/07]</strong> &#127881; TeleDexter was accepted to the 4th RSS Workshop on Dexterous Manipulation: Scalable Learning for Human-Level Skills.</li>
+          <li><strong>[2026/07]</strong> &#127881; TeleDexter was accepted to the 4th RSS Workshop on Dexterous Manipulation!</li>
           <li><strong>[2025/08]</strong> &#127881; ECO is now available on arXiv!</li>
         </ul>
       </section>
@@ -119,13 +119,14 @@
               <span class="papertitle">Nanyang Technological University, Singapore</span><br>
               <em>2026.06 &ndash; Present</em><br>
               <strong>Ph.D. in School of Mechanical and Aerospace Engineering</strong><br>
+              <a class="experience-lab marslab-link" href="https://marslab.tech/">MarsLab</a><br>
               <span class="experience-focus">Dexterous manipulation.</span>
             </td>
           </tr>
           <tr class="project-item experience-item">
             <td><div class="experience-logo"><img src="images/BIGAI_logo.png" alt="BIGAI logo"></div></td>
             <td>
-              <a href="https://www.bigai.ai/"><span class="papertitle">Beijing Institute for General Artificial Intelligence (BIGAI)</span></a><br>
+              <a href="https://eng.bigai.ai/"><span class="papertitle">Beijing Institute for General Artificial Intelligence (BIGAI)</span></a><br>
               <em>2025.11 &ndash; 2026.05</em><br>
               <strong>Research Intern</strong><br>
               <span class="experience-focus">Dexterous hand teleoperation.</span>
@@ -137,6 +138,7 @@
               <a href="https://hzi.zju.edu.cn/"><span class="papertitle">Zhejiang University Huzhou Institute, China</span></a><br>
               <em>2023.12 &ndash; 2024.02</em><br>
               <strong>Research Intern</strong><br>
+              <a class="experience-lab" href="https://fast-fire.github.io/">Fast-Fire Lab</a><br>
               <span class="experience-focus">Ground-air amphibious quadrotor UAVs.</span>
             </td>
           </tr>
@@ -146,6 +148,7 @@
               <span class="papertitle">Harbin Institute of Technology, China</span><br>
               <em>2021.09 &ndash; 2025.06</em><br>
               <strong>B.Eng in School of Future Technology</strong><br>
+              <a class="experience-lab" href="https://robot.hit.edu.cn/">State Key Laboratory of Robotics and System</a><br>
               <span class="experience-focus">Robotic planning and optimization, autonomous vehicles and motor control.</span>
             </td>
           </tr>
@@ -154,5 +157,11 @@
 
       <!-- <footer>Based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's academic website template</a>.</footer> -->
     </td></tr></tbody></table>
+    <script>
+      document.querySelectorAll('a[href]').forEach((link) => {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      });
+    </script>
   </body>
 </html>
