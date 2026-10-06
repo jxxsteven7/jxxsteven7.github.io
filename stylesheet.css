@@ -88,11 +88,12 @@ a:focus, a:hover { color: var(--accent); text-decoration: underline; text-underl
 }
 
 .contact-icon { display: block; }
+.photo-links .contact-icon { border-radius: 0; }
 .contact-link:nth-child(1) .contact-icon { width: 24px; height: 24px; }
 .contact-link:nth-child(2) .contact-icon { width: 22px; height: 22px; }
 .contact-link:nth-child(3) .contact-icon { width: 22px; height: 22px; }
 .contact-link:nth-child(4) .contact-icon { width: 20px; height: 20px; }
-.contact-link:nth-child(5) .contact-icon { width: 18px; height: 18px; }
+.contact-link:nth-child(5) .contact-icon { width: 20px; height: 20px; }
 
 section { margin: 8px 16px 34px; }
 
