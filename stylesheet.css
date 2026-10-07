@@ -266,4 +266,12 @@ footer, footer a { font-size: 13px; }
   .project-item > td:first-child { margin-bottom: 14px; }
   .project-visual { max-width: none; }
   .experience-logo { margin: 0 auto; }
+  .photo-links { flex-wrap: wrap; gap: 6px 5px; zoom: 0.75; }
+  .photo-links .contact-link { flex-shrink: 0; }
+  .publication-table, .publication-table > tbody, .publication-item, .publication-item > td { display: block; }
+  .publication-item { padding: 16px; }
+  .publication-item + .publication-item { margin-top: 10px; }
+  .publication-item > td { width: auto !important; padding: 0 !important; }
+  .publication-item > td:first-child { margin-bottom: 14px; }
+  .publication-thumbnail { width: 100%; height: auto; aspect-ratio: 16 / 9; }
 }
