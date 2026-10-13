@@ -586,5 +586,6 @@ footer, footer a { font-size: 13px; }
   .publication-item + .publication-item { margin-top: 10px; }
   .publication-item > td { width: auto !important; padding: 0 !important; }
   .publication-item > td:first-child { margin-bottom: 14px; }
-  .publication-thumbnail { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+  .publication-thumbnail { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
+  .publication-thumbnail img, .publication-thumbnail video { position: absolute; top: 0; left: 0; }
 }

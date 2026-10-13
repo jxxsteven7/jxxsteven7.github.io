@@ -85,7 +85,7 @@
     </script>
 
     <link rel="stylesheet" type="text/css"
-          href="stylesheet.css?v=20261013b">
+          href="stylesheet.css?v=20261013c">
   </head>
 
   <body>
@@ -270,6 +270,14 @@
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
       });
+      // WeChat and iOS low-power mode block autoplay; retry once the bridge is ready or on first touch.
+      const playVideos = () => document.querySelectorAll('video[autoplay]').forEach((v) => {
+        const p = v.play();
+        if (p) p.catch(() => {});
+      });
+      document.addEventListener('WeixinJSBridgeReady', playVideos);
+      if (window.WeixinJSBridge) playVideos();
+      document.addEventListener('touchstart', playVideos, { once: true, passive: true });
     </script>
   </body>
 </html>
