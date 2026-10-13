@@ -258,16 +258,21 @@ footer, footer a { font-size: 13px; }
 
 @media (max-width: 640px) {
   .site-shell { max-width: 100%; }
-  .profile-copy { width: 68%; }
-  .profile-photo { width: 32%; max-width: 32%; }
-  .name { font-size: 32px; }
+  .profile, .profile > tbody { display: block; }
+  .profile tr { display: flex; flex-direction: column; }
+  .profile td { display: block; width: auto; max-width: none; }
+  .profile-photo { order: -1; padding: 28px 16px 0; transform: none; }
+  .profile-photo img { width: 156px; height: 156px; margin: 0 auto; }
+  .profile-copy { padding: 0 16px 8px; }
+  .name { padding-top: 18px; font-size: 30px; text-align: center; }
   .project-item, .experience-item { display: block; }
   .project-item > td { display: block; width: 100% !important; }
   .project-item > td:first-child { margin-bottom: 14px; }
   .project-visual { max-width: none; }
-  .experience-logo { margin: 0 auto; }
-  .photo-links { flex-wrap: wrap; gap: 6px 5px; zoom: 0.75; }
-  .photo-links .contact-link { flex-shrink: 0; }
+  .experience-logo { width: 72px; height: 72px; justify-content: flex-start; }
+  .experience-logo img { object-position: left center; }
+  .project-item.experience-item { padding: 20px 0; }
+  .photo-links { gap: 16px; margin-top: 14px; }
   .publication-table, .publication-table > tbody, .publication-item, .publication-item > td { display: block; }
   .publication-item { padding: 16px; }
   .publication-item + .publication-item { margin-top: 10px; }
